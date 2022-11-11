@@ -49,6 +49,7 @@ export default function Home() {
       <div className=' h-screen bg-slate-900' onClick={handleClickCircles}>
         {points.map((point) =>(
         <div
+        key={point.x + '-' + point.y}
         className='absolute inline-block rounded-full w-4 h-4'
         style={{
           left: point.x + 'px',
